@@ -25,22 +25,30 @@
         </license>
     </licenses>
 
+    <repositories>
+        <repository>
+            <id>Liberty</id>
+            <name>Liberty Repository</name>
+            <url>http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/maven/repository/</url>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.geronimo.specs</groupId>
-                <artifactId>geronimo-servlet_3.0_spec</artifactId>
-                <version>1.0</version>
+                <groupId>com.ibm.tools.target</groupId>
+                <artifactId>was-liberty</artifactId>
+                <version>8.5.x.6</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-servlet_3.0_spec</artifactId>
-            <scope>provided</scope>
+            <groupId>com.ibm.tools.target</groupId>
+            <artifactId>was-liberty</artifactId>
+            <type>pom</type>
         </dependency>
     </dependencies>
 

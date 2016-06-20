@@ -15,8 +15,9 @@ public class HelloServlet extends HttpServlet {
 
     /** シリアルバージョンID */
     private static final long serialVersionUID = 1808808594661653378L;
-    @Inject
-    private HelloBean helloBean;
+    //@Inject
+    //private HelloBean helloBean;
+    private HelloBean helloBean = new HelloBean();
 
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setContentType("text/html; charset=UTF-8");

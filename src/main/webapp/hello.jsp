@@ -1,5 +1,6 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import="wasdev.sample.model.HelloBean"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html>
 <head>
 <link rel="stylesheet"
@@ -10,10 +11,7 @@
 <body>
 
     <h1>
-        <%
-            HelloBean helloBean = new HelloBean();
-            out.println(helloBean.getMessage());
-        %>
+        <c:out value="${helloBean.message}" />
     </h1>
 
 </body>
